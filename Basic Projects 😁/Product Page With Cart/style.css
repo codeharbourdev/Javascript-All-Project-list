@@ -1,0 +1,498 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    border: 5px solid green;
+    box-shadow: inset 0px 0px 100px black;
+    background-image: url(background-img.jpg);
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/***********************  container  ************************/
+.container {
+    height: 650px;
+    width: 1100px;
+    background: linear-gradient(to right, #38663c, #6be68ef4);
+    border: 5px solid greenyellow;
+    border-radius: 30px;
+    box-shadow: 0px 0px 50px black;
+}
+
+/************************   navbar  *************************/
+nav {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: space-around;
+}
+
+#logo {
+    height: 100%;
+    width: 180px;
+    font-size: 40px;
+    color: yellow;
+    font-family: serif;
+    font-weight: 700;
+    filter: drop-shadow(0px 0px 4px black);
+    cursor: pointer;
+}
+
+#links {
+    height: 100%;
+    width: 300px;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+
+#links a {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 1px black);
+}
+
+#links a:hover {
+    color: yellow;
+    border: 2px solid black;
+    padding: 2px 5px;
+    border-radius: 4px;
+    box-shadow: inset 0px 0px 2px black;
+}
+
+#links a:first-child {
+    color: yellow;
+    border: 2px solid black;
+    padding: 2px 5px;
+    border-radius: 4px;
+    box-shadow: inset 0px 0px 2px black;
+    filter: drop-shadow(0px 0px 1px black);
+}
+
+#search-cart {
+    height: 100%;
+    width: 260px;
+    display: flex;
+    align-items: end;
+    justify-content: space-around;
+}
+
+#search-div {
+    height: 35px;
+    width: 200px;
+    border: 1px solid black;
+    box-shadow: inset 0px 0px 3px black;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#search-div input {
+    height: 25px;
+    width: 150px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 15px;
+    outline: none;
+    border: none;
+    background: none;
+}
+
+#search-div input::placeholder {
+    color: black;
+}
+
+#cart-div {
+    height: 35px;
+    width: 40px;
+    border: 1px solid black;
+    box-shadow: inset 0px 0px 3px black;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+}
+
+#cart {
+    font-size: 20px;
+}
+
+/**********************   main  **********************/
+main {
+    height: 420px;
+    width: 100%;
+    display: flex;
+}
+
+#main-content1 {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    gap: 20px;
+}
+
+#main-content1 h1 {
+    font-size: 50px;
+    color: black;
+    filter: drop-shadow(0px 0px 3px white);
+}
+
+#main-content1 p {
+    font-size: 18px;
+    color: white;
+    filter: drop-shadow(0px 0px 2px black);
+}
+
+#main-content1 h5 {
+    font-size: 30px;
+    color: yellow;
+    filter: drop-shadow(0px 0px 2px black);
+}
+
+#btn {
+    height: 30px;
+    width: 100px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 700;
+    background: red;
+    cursor: pointer;
+    color: white;
+    box-shadow: inset 0px 0px 3px black;
+    transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+#btn:hover {
+    color: white;
+    background-color: black;
+    box-shadow: inset 0px 0px 3px white;
+}
+
+/**********************   main content 2    ************************/
+#main-content2 {
+    height: 420px;
+    width: 550px;
+}
+
+.slider {
+    height: 380px;
+    width: 500px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.slider-container {
+    height: 100%;
+    width: 600%;
+    display: flex; 
+}
+
+.slider-container img {
+    height: 100%;
+    width: 100%;
+    filter: drop-shadow(0px 0px 5px black);
+}
+
+/************************  left right div  ******************/
+
+#leftright-div {
+    height: 40px;
+    width: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#left {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    border: 1px solid black;
+    box-shadow: inset 0px 0px 5px black;
+    cursor: pointer;
+}
+
+#left:hover {
+    background-color: rgba(255, 255, 255, 0.405);
+}
+
+#right {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    border: 1px solid black;
+    box-shadow: inset 0px 0px 5px black;
+    cursor: pointer;
+}
+
+#right:hover {
+    background-color: rgba(255, 255, 255, 0.405);
+}
+
+/**********************   footer  **********************/
+footer {
+    height: 170px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.btn1 {
+    height: 25px;
+    width: 80px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 5px;
+    background: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: white;
+    box-shadow: inset 0px 0px 3px black;
+    transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.btn1:hover {
+    color: white;
+    background-color: black;
+    box-shadow: inset 0px 0px 3px white;
+}
+
+/**********************   footer-box 1  **********************/
+.footer-box1 {
+    height: 110px;
+    width: 220px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 5px black;
+    cursor: pointer;
+    display: flex;
+    transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.footer-box1:hover {
+    background-color: rgba(255, 255, 255, 0.175);
+}
+
+.footer-box1-id1 {
+    height: 100%;
+    width: 50%;
+    color: rgb(243, 243, 10);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.footer-box1-id1 h1 {
+    font-size: 15px;
+}
+
+.footer-box1-id1 h5 {
+    margin-top: 5px;
+    color: white;
+}
+
+.footer-box1-id2 {
+    height: 100%;
+    width: 50%;
+    color: yellow;
+}
+
+.footer-box1-id2 img {
+    height: 110px;
+    width: 110px;
+    margin-top: -30px;
+    margin-left: 10px;
+    filter: drop-shadow(0px 0px 4px black);
+}
+
+/**********************   footer-box 2  **********************/
+.footer-box2 {
+    height: 110px;
+    width: 220px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 5px black;
+    cursor: pointer;
+    display: flex;
+    transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.footer-box2:hover {
+    background-color: rgba(255, 255, 255, 0.175);
+}
+
+.footer-box2-id1 {
+    height: 100%;
+    width: 50%;
+    color: rgb(243, 243, 10);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.footer-box2-id1 h1 {
+    font-size: 15px;
+}
+
+.footer-box2-id1 h5 {
+    margin-top: 5px;
+    color: white;
+}
+
+.footer-box2-id2 {
+    height: 100%;
+    width: 50%;
+    color: yellow;
+}
+
+.footer-box2-id2 img {
+    height: 110px;
+    width: 110px;
+    margin-top: -30px;
+    margin-left: 10px;
+    filter: drop-shadow(0px 0px 4px black);
+}
+
+/**********************   footer-box 3  **********************/
+.footer-box3 {
+    height: 110px;
+    width: 220px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 5px black;
+    cursor: pointer;
+    display: flex;
+    transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.footer-box3:hover {
+    background-color: rgba(255, 255, 255, 0.175);
+}
+
+.footer-box3-id1 {
+    height: 100%;
+    width: 50%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.footer-box3-id1 h1 {
+    font-size: 15px;
+}
+
+.footer-box3-id1 h5 {
+    margin-top: 5px;
+    color: white;
+}
+
+.footer-box3-id2 {
+    height: 100%;
+    width: 50%;
+    color: black;
+}
+
+.footer-box3-id2 img {
+    height: 110px;
+    width: 110px;
+    margin-top: -30px;
+    margin-left: 10px;
+    filter: drop-shadow(0px 0px 4px black);
+}
+
+/**********************   footer-box 4  **********************/
+.footer-box4 {
+    height: 110px;
+    width: 220px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 5px black;
+    cursor: pointer;
+    display: flex;
+    transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.footer-box4:hover {
+    background-color: rgba(255, 255, 255, 0.175);
+}
+
+.footer-box4-id1 {
+    height: 100%;
+    width: 50%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.footer-box4-id1 h1 {
+    font-size: 15px;
+}
+
+.footer-box4-id1 h5 {
+    margin-top: 5px;
+    color: red;
+}
+
+.footer-box4-id2 {
+    height: 100%;
+    width: 50%;
+    color: black;
+}
+
+.footer-box4-id2 img {
+    height: 110px;
+    width: 110px;
+    margin-top: -30px;
+    margin-left: 10px;
+    filter: drop-shadow(0px 0px 4px black);
+}
+
+
+
+
+
+
+
+
+
+
+
+
