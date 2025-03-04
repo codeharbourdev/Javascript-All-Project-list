@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to right, orange, white);
+    border: 5px solid black;
+    box-shadow: inset 0px 0px 10px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    height: 650px;
+    width: 1000px;
+    border-radius: 20px;
+    background-image: url(hero-img.jpg);
+    background-size: 100% 100%;
+    box-shadow: 0px 0px 10px black;
+}
+
+.content-area {
+    height: 650px;
+    width: 1000px;
+    background-color: rgba(255, 255, 255, 0.042);
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+    border: 5px solid black;
+}
+
+#content {
+    height: 55%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+#content h1 {
+    font-size: 100px;
+    color: yellow;
+    filter: drop-shadow(0px 0px 3px black);
+}
+
+#content p {
+    font-size: 25px;
+    color: blue;
+    filter: drop-shadow(0px 0px 1px red);
+    margin-bottom: 10px;
+}
+
+#content button {
+    height: 30px;
+    width: 150px;
+    font-size: 20px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    cursor: pointer;
+    background: linear-gradient(to right, yellow, white);
+}
+
+#content button:hover {
+    background: linear-gradient(to right, green, white);
+    color: red;
+}
+
+.slide {
+    height: 40%;
+    width: 100%;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.slider {
+    height: 200px;
+    width: 6430px;
+    cursor: pointer;
+}
+
+.slider img {
+    height: 100%;
+    width: 200px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px white;
+    margin-right: 10px;
+}
+
+#left-right {
+    height: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+#left-right i {
+    padding: 5px 10px;
+    background: linear-gradient(to right, yellow, white);
+    border-radius: 2px;
+    cursor: pointer;
+    box-shadow: 0px 0px 3px black;
+}
+
+
