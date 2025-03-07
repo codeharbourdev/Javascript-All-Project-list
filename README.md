@@ -10,16 +10,6 @@ Welcome to **JavaScript Projects Collection**! 🏆✨ This repository contains 
 ## 📌 Projects Included  
 ✔️ **Name Wizard** 🎩✨ - Reverse names & count vowels  
 ✔️ **More coming soon...** 🚀  
-
----
-
-## 📂 Folder Structure  
-```bash
-Javascript-Projects/
-│── Name-Wizard/
-│── README.md
-```
-
 ---
 
 ## 🛠️ Technologies Used  
