@@ -1,0 +1,171 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to bottom, black, white);
+    border: 20px solid black;
+    box-shadow: inset 0px 0px 10px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+
+h1 {
+    font-size: 50px;
+    font-family: sans-serif;
+    text-decoration: underline;
+    color: black;
+}
+
+.container {
+    height: 650px;
+    width: min-content;
+    background-color: white;
+    border: 8px solid white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px black, inset 0px 0px 8px black;
+    display: flex;
+}
+
+/******************  icon  ****************/
+.icon-container {
+    height: 100%;
+    width: 60px;
+    padding-left: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    user-select: none;
+    cursor: pointer;
+}
+
+#icon-nav {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#icon-hero {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 2px solid grey;
+}
+
+#icon-main {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 2px solid grey;
+}
+
+#icon-footer {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+i {
+    font-size: 25px;
+}
+
+img {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    border: 1px solid grey;
+}
+
+p {
+    font-size: 22px;
+    font-weight: 600;
+    font-family: sans-serif;
+    margin-left: 5px;
+}
+
+p:hover {
+    text-decoration: underline;
+}
+
+.dark {
+    background-color: black;
+    color: white;
+}
+
+.light {
+    background-color: white;
+    color: black;
+}
+
+/*********************  name ****************/
+#icon-name {
+    height: 100%;
+    width: 200px;
+    padding-right: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    user-select: none;
+    cursor: pointer;
+}
+
+#nav-name {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+#hero-name {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+    border-bottom: 2px solid grey;
+}
+
+#main-name {
+    height: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+    border-bottom: 2px solid grey;
+}
+
+#footer-name {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
