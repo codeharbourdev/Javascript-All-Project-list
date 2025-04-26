@@ -126,7 +126,7 @@ let report = document.getElementById("report");
 let reportcard = document.getElementById("reportcard");
 
 report.addEventListener("click", () => {
-    if(reportcard.style.display = "none") {
+    if(reportcard.style.display === "none") {
         reportcard.style.display = "block";
     } else {
         reportcard.style.display = "none";
