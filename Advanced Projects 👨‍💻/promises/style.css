@@ -1,0 +1,183 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: pink;
+    user-select: none;
+}
+
+/****************************  nav *************************/
+nav {
+    height: 80px;
+    width: 100%;
+    border-bottom: 3px solid blue;
+    box-shadow: -0px 0px 5px black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav p {
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: blue;
+    filter: drop-shadow(0px 0px 1px black);
+}
+
+/*********************  main ************************/
+main {
+    height: 648px;
+    width: 100%;
+    display: flex;
+}
+
+
+/*******************  input container ***********************/
+#input-container {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/**********************  para **************************/
+#para {
+    height: 60px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: blue;
+}
+
+#para p {
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: white;
+    filter: drop-shadow(0px 0px 1px black);
+}
+
+/*********************  form ************************/
+#form {
+    height: 500px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#form input {
+    height: 50px;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    border-bottom: 3px solid black;
+    background: none;
+}
+
+#form input::placeholder {
+    color: black;
+    font-weight: 600;
+}
+
+#form button {
+    height: 50px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 700;
+    outline: none;
+    border: 3px solid blue;
+    background-color: blue;
+    border-radius: 40px;
+    color: white;
+    box-shadow: 0px 0px 3px black;
+    transition: background-color 0.2s ease-in-out;
+}
+
+#form button:hover {
+    cursor: pointer;
+    background-color: pink;
+    color: blue;
+}
+
+/*******************  show report *****************************/
+#show-report {
+    height: 100%;
+    width: 50%;
+    border-left: 2px solid black;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    overflow-y: scroll;  
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#show-report::-webkit-scrollbar {
+    width: 12px;
+}
+
+#show-report::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+#show-report::-webkit-scrollbar-thumb {
+    background-color: blue;
+    border-radius: 10px;
+}
+
+#report-box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#getting {
+    font-size: 30px;
+    width: 500px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: 700;
+    color: blue;
+    font-family: sans-serif;
+}
+
+.report {
+    height: 250px;
+    width: 280px;
+    border: 3px solid blue;
+    background-color: blue;
+    border-radius: 10px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0px 0px 5px black;
+}
+
