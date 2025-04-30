@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Student Managment System</title>
+</head>
+<body>
+    <nav>
+        <p>Student Managment System</p>
+    </nav>
+
+    <main>
+        <div id="fill-box">
+            <h1>Enter Student Detail</h1>
+
+            <form>
+                <input type="text" placeholder="Enter Student Name" id="inputname" autocomplete="off" required>
+                <input type="text" placeholder="Enter Student Roll No." id="rollinput" autocomplete="off" required>
+                <input type="text" placeholder="Enter Student Marks" id="markinput" autocomplete="off" required>
+                <input type="text" placeholder="Enter Student Aim" id="aiminput" autocomplete="off" required>
+            </form>
+
+            <div id="fill-btn">
+                <div id="submitbtn">Submit</div>
+                <div id="totalbtn">Total Student</div>
+            </div>
+
+            <p id="total-content"></p>
+        </div>
+
+        <div id="content-box"></div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

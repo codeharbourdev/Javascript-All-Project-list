@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>MP3 player</title>
+</head>
+<body>
+    <!----------------------   nav ------------------->
+    <nav>
+        <img src="logo 2.png" alt="logo">
+        <h1>Code Harbour Mp3 Player</h1>
+    </nav>
+
+    <div class="container">
+        <div id="music-container">
+            <!----------------------   navbar ------------------->
+            <div id="navbar">
+                <div id="songname-box">
+                    <h3>Song Name :</h3>
+                    <h3 id="song"></h3>
+                </div>
+            </div>
+
+            <!-----------------------   artist container ----------------->
+            <div id="artist-container">
+                <div id="artist-content">
+                    <h3>Artist</h3>
+                    <p>Verified Actor</p>
+                    <h1>Its Weekend With Arjit ❤️</h1>
+                </div>
+
+                <div id="artist-img-content">
+                    <img src="arjit.png" alt="arjit">
+                </div>
+            </div>
+
+            <!----------------------   playlist section ------------------->
+            <audio id="audio" src=""></audio>
+
+            <div id="playlist-container">
+                <ul id="playlist">
+                    <li data-src="Song1.mp3">Hamari Adhuri Kahani</li>
+                    <li data-src="Song2.mp3">Tujhe Kitna Chahne</li>
+                    <li data-src="Song3.mp3">Ae Dil Hai</li>
+                    <li data-src="Song4.mp3">Khamoshiyan</li>
+                    <li data-src="Song5.mp3">Hamdurd</li>
+                    <li data-src="Song6.mp3">Gerua</li>
+                    <li data-src="Song7.mp3">Chhod Diya</li>
+                    <li data-src="Song8.mp3">Main Dhoodne Ko</li>
+                    <li data-src="Song9.mp3">Kaise Mujhe</li>
+                    <li data-src="Song10.mp3">Muskurane Ki Wajah</li>
+                </ul>
+            </div>
+
+            <!----------------------   footer ----------------------------->
+            <div id="footer">
+                <div id="btn-box">
+                    <i id="prev" class="fa-solid fa-backward"></i>
+                    <i id="play" class="fa-solid fa-play"></i>
+                    <i id="next" class="fa-solid fa-forward"></i>
+                    <input type="range" id="input" min="0" max="1"  step="0.01" value="1">
+                    <i id="mutebtn" class="fa-solid fa-volume-high"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
