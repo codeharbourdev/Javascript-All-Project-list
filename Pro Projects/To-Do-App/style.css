@@ -1,0 +1,230 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+}
+
+nav {
+    height: 50px;
+    width: 100%;
+    border-bottom: 3px solid blue;
+    box-shadow: -5px 0px 5px blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+nav h1 {
+    font-size: 35px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue';
+    font-weight: 800;
+    color: blue;
+    user-select: none;
+}
+
+button {
+    padding: 2px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    user-select: none;
+    background: none;
+    outline: none;
+    border: 3px solid blue;
+    border-radius: 15px;
+    box-shadow: inset 0px 0px 2px blue;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#sun {
+    font-size: 18px;
+    color: blue;
+}
+
+#para {
+    font-size: 18px;
+    font-weight: 700;
+    color: blue;
+}
+
+main {
+    height: 675px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/************************  main container ************************/
+
+#container {
+    height: 600px;
+    width: 450px;
+    border: 5px solid blue;
+    border-radius: 10px;
+    background-color: blue;
+    box-shadow: 0px 0px 5px blue;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#input-container {
+    height: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-bottom: 3px solid white;
+}
+
+#input {
+    height: 50px;
+    width: 95%;
+    outline: none;
+    border: 3px solid blue;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    color: blue;
+}
+
+#input::placeholder {
+    color: blue;
+}
+
+#btn {
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    background: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: sans-serif;
+    border: 3px solid blue;
+    background-color: white;
+    color: blue;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*************************  todo container  ************************/
+
+#todo-container {
+    height: 440px;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    overflow-y: scroll;
+}
+
+#todo-container::-webkit-scrollbar {
+    width: 10px;
+}
+
+#todo-container::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+#todo-container::-webkit-scrollbar-thumb {
+    background-color: white;
+    border-radius: 10px;
+}
+
+#todo-content {
+    height: min-content;
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.todo-list {
+    height: 40px;
+    width: 100%;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 4px;
+    box-shadow: inset 0px 0px 3px blue;
+}
+
+.todo-list div {
+    font-size: 18px;
+    background-color: blue;
+    color: white;
+    height: 30px;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    box-shadow: 0px 0px 3px blue;
+    cursor: pointer;
+    user-select: none;
+}
+
+/************************ class list *********************/
+
+.light {
+    background-color: white;
+}
+
+.dark {
+    background-color: bisque;
+}
+
+
+/***************  responsive todo  *************************/
+@media (max-width : 450px) {
+    nav h1 {
+        font-size: 25px;
+    }
+
+    #sun {
+        font-size: 16px;
+    }
+
+    #para {
+        font-size: 16px;
+    }
+
+    .todo-list {
+        font-size: 16px;
+    }
+
+    .todo-list div {
+        font-size: 16px;
+        height: 22px;
+        width: 75px;
+    }
+}
+
+
