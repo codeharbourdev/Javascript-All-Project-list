@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(to right, #6d678e, #f6b5cc);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    height: 70vh;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.278);
+    box-shadow: 0px 0px 3px blue;
+    border: 5px solid black;
+    border-radius: 20px;
+    position: relative;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#img1 {
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+    position: absolute;
+    top: -90px;
+    right: -90px;
+    z-index: -10;
+    filter: drop-shadow(0px 0px 3px black);
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    font-family: serif;
+    font-weight: 900;
+    color: black;
+    filter: drop-shadow(0px 0px 3px black);
+}
+
+#password {
+    border: 5px solid blue;
+    height: 50px;
+    width: 80%;
+    font-size: 25px;
+    font-weight: 700;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-top: 6px;
+    background: linear-gradient(to right, #6fc3f7, #c2fdff);
+    box-shadow: 0px 0px 5px black;
+    outline: none;
+}
+
+#generate {
+    height: 40px;
+    width: 80%;
+    border-radius: 20px;
+    border: 5px solid blue;
+    background: linear-gradient(to right, #6fc3f7, #c2fdff);
+    box-shadow: 0px 0px 5px black;
+    font-size: 20px;
+    font-family: serif;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#generate:hover {
+    background: linear-gradient(to right, #fc8884, #eef3d2);
+}
+
+h3 {
+    width: 70%;
+    font-size: 18px;
+    color: red;
+    display: flex;
+    gap: 15px;
+}
+
+h3 p {
+    color: black;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+#refresh {
+    height: 40px;
+    width: 80%;
+    border-radius: 20px;
+    border: 5px solid blue;
+    background: linear-gradient(to right, #6fc3f7, #c2fdff);
+    box-shadow: 0px 0px 5px black;
+    font-size: 20px;
+    font-family: serif;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#refresh:hover {
+    background: linear-gradient(to right, #fc8884, #eef3d2);
+}
+
+
